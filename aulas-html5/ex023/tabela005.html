@@ -4,12 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            width: 150px;
+            height: 30px;
+        }
+
+        table{
+            border-collapse:collapse;
+        }
+
+        .cnome{
+            background-color: lightgreen;
+        }
+
+        .cidade{
+            background-color: lime;
+        }
+
+        .csexo{
+            background-color: lightblue;
+        }
+
+        .cprofissao{
+            background-color: aqua;
+        }
+
+    </style>
 </head>
 <body>
     <h1>EXERCÍCIOS DE TABELA</h1>
 
     <table>
-        
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">NOME</th>
+                <th scope="col">SEXO</th>
+                <th scope="col">IDADE</th>
+                <th scope="col">PROFISSÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gabriel</td>
+                <td>Masculino</td>
+                <td>18</td>
+                <td>Gestor de Tráfego</td>
+            </tr>
+            <tr>
+                <td>Rafhael</td>
+                <td>Masculino</td>
+                <td>26</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Kamila</td>
+                <td>Feminino</td>
+                <td>27</td>
+                <td>Biomédica</td>
+            </tr>
+            <tr>
+                <td>Vanderlei</td>
+                <td>Masculino</td>
+                <td>48</td>
+                <td>Funcionário Publico</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
